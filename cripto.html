@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cripto.css">
+</head>
+<body>
+    <sections id="contenedor">
+        <div id="img">
+            <img class="foto" src="img.svg" alt="img">
+        </div>
+
+        <div id="page-container">
+            <form id="formulario">
+                <div id="input-container">
+                    <p>ELIGE TU MONEDA</p>
+                    <select name="Moneda" class="moneda" id="coin-selection">
+                        <option value="" selected disabled>Seleccionar un moneda</option>
+                        <option value="USD">Dolar Estadounidense</option>
+                        <option value="EUR">Euros</option>
+                        <option value="ARS">Peso Argentino</option>
+                        <option value="VES">Bolivares</option>
+                    </select>
+                </div>
+                <div id="input-container">
+                    <p>ELIGE TU CRIPTOMONEDA</p>
+                    <select name="CriptoMoneda" class="moneda" id="crypto-selection">
+                        <option value="" selected disabled>Seleccionar un Criptomoneda</option>
+                        <option value="BTC">Bitcoin</option>
+                        <option value="ETH">Ethereum</option>
+                        <option value="AXS">AXS</option>
+                        <option value="BNB">Balance Coin</option>
+                    </select>
+                </div>
+                <div id="input-container">
+                    <p>MONTO</p>
+                   <input type="text" placeholder="Agregar Monto"  class="moneda" id="Moneda" >
+                </div> <br>
+               <button type="submit" id="boton">Cotizar</button>
+            </form>
+            <div id="coin-info"></div>
+        </div>
+    </section>
+    <script src="cripto.js"></script>
+</body>
+</html>
